@@ -1,0 +1,60 @@
+/*Google Font: Lato*/
+@import "https://fonts.googleapis.com/css2?family=Lato&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-90deg, #434662, #726a8f, #b190a1, #f1c3bb);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: lowercase;
+  letter-spacing: 2p
+  border: 3px solid #fff;x;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem 10rem;
+}
+/*Animation Code*/
+@keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+audio {
+  display: none;
+}
+
+a{
+  text-decoration: none;
+  color: #b190a1;
+}
+
+a:hover { text-decoration: none; color: #434662; }
+a:focus { text-decoration: none; color:orange; }
+a:active { text-decoration: none; color:white; }
+/*I made this so that I could relax while studying sometimes.*/
